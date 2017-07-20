@@ -1,0 +1,62 @@
+.biz_viz_main {
+  .brand-text {
+    color: white;
+    font-size: 25px;
+    margin-left: 20px !important;
+  }
+
+  .bvBackground {
+    //background-image: url("./../assets/images/bizviz-nav.jpg");
+    background-color: #1a4382;
+  }
+
+  .userName {
+    color: white !important;
+    left: 25px;
+    top: 5px;
+  }
+
+  .menu-bar {
+    margin-top: 20px !important;
+    margin-left: 10px !important;
+  }
+}
+
+.side-nav {
+  margin-top: 60px;
+  width: 15%;
+  background-color: #1a4382 !important;
+
+  md-content {
+    background-color: #1a4382 !important;
+  }
+
+  ul {
+    padding: 10px;
+    color: white;
+
+    li {
+      i {
+        outline: none !important;
+      }
+      height: 30px;
+      color: white;
+      padding: 1px;
+      font-size: 15px;
+
+      .sml {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .active {
+    background-color: white;
+    color: black;
+    width: 195px;
+  }
+}
+
+.middle-container {
+  background-color: #c1c1c1;
+}

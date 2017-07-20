@@ -1,0 +1,192 @@
+<div class="row">
+  <div class="biz_viz_main">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid bvBackground">
+
+        <div class="navbar-header">
+          <a><i class="fa fa-bars menu-bar pull-left" ng-click="bvc.toggleLeft()"  style="color:white" aria-hidden="true"></i></a>
+          <a class="navbar-brand brand-text" href="http://www.bdbizviz.com/">BIZVIZ</a>
+        </div>
+        <ul class="nav navbar-nav pull-right">
+          <li>
+            <a><i class="fa fa-bell-o fa-lg" style="color:white" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a><i class="fa fa-cog fa-lg" style="color:white" aria-hidden="true"></i></a>
+          </li>
+          <li><a><i class="fa fa-question fa-lg" style="color:white" aria-hidden="true"></i></a></li>
+          <li><a class="userName">Raghvendra Singh</a></li>
+          <li><a style="color:white"><i class="fa fa-user-circle fa-2x" style="color:white" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+<!--  -->
+
+<div class="row">
+  <div class="col-md-2">
+  </div>
+  <md-sidenav class="md-sidenav-left side-nav" md-component-id="left" md-disable-backdrop md-whiteframe="4">
+    <md-content>
+      <ul>
+        <li ng-class="{active:bvc.isSet(1)}"><i class="fa fa-home" ng-click="bvc.setTab(1)"><span class="sml">My Account</span></i></li>
+        <li ng-class="{active:bvc.isSet(2)}"><i class="fa fa-user" ng-click="bvc.setTab(2)"><span class="sml">Personal Info</span></i></li>
+        <li ng-class="{active:bvc.isSet(3)}"><i class="fa fa-credit-card" ng-click="bvc.setTab(3)"><span class="sml">Subscriptions</span></i></li>
+        <li ng-class="{active:bvc.isSet(4)}"><i class="fa fa-key" ng-click="bvc.setTab(4)"><span class="sml">Security & Privacy</span></i></li>
+        <li ng-class="{active:bvc.isSet(5)}"><i class="fa fa-lock" ng-click="bvc.setTab(5)"><span class="sml">App Permissions</span></i></li>
+        <li ng-class="{active:bvc.isSet(6)}"><i class="fa fa-download" ng-click="bvc.setTab(5)"><span class="sml">Install Status</span></i></li>
+        <li ng-class="{active:bvc.isSet(7)}"><i class="fa fa-cog" ng-click="bvc.setTab(5)"><span class="sml">Settings</span></i></li>
+      </ul>
+    </md-content>
+  </md-sidenav>
+
+  <div class="col-md-10 middle-container">
+    <div ng-show="bvc.isSet(1)">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title fa fa-credit-card ">Subscriptions</h4>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-default">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title fa fa-key">Security & Privacy</h4>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-default">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title fa fa-lock">App Permissions</h4>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-default">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title fa fa-download">Install Status</h4>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-default">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title fa fa-cog">Settings</h4>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-default">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div ng-show="bvc.isSet(2)">
+      <div class="col-sm-4">
+        <div class="user-details">
+          <div class="row">
+            <span style="float:left">About</span>
+            <span style="float:right"><i class="fa fa-pencil">Edit</i></span>
+          </div>
+          <div>
+            <ul style="display:inline;">
+              <li>First Name</li>
+              <li>First Name</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title fa fa-key">Security & Privacy</h4>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-default">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title fa fa-lock">App Permissions</h4>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-default">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- <p>
+        Developers can also disable the backdrop of the sidenav.<br/> This will disable the functionality to click outside to close the sidenav.
+      </p> -->
+<!-- <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Special title treatment</h4>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Special title treatment</h4>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Special title treatment</h4>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+<!-- <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div> -->
